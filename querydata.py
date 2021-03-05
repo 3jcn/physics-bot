@@ -1,5 +1,5 @@
 from gtts import gTTS
-import playsound
+#import playsound
 #import pywhatkit
 import wikipedia
 import datetime
@@ -14,7 +14,7 @@ def talk(text):
     r2 = random.randint(1,10000000)
     filename = str(r1)+str(r2)+".mp3"
     tts.save(filename)
-    playsound.playsound(filename,True)
+    os.system(f'start(filename)')
     os.remove(filename)
 
 def run_query(input):
