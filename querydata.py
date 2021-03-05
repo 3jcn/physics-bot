@@ -5,6 +5,7 @@ import wikipedia
 import datetime
 import random
 import os
+import pyaudio
 import webbrowser
 
 
