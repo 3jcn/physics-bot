@@ -4,7 +4,7 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import random
-import io
+import os
 import webbrowser
 
 
