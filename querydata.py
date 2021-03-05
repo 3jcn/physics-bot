@@ -1,17 +1,16 @@
-import pyttsx3
-import pywhatkit
+from gtts import gTTS
+import playsound
+#import pywhatkit
 import wikipedia
 import datetime
 import webbrowser
 
 
 def talk(text):
-    engine = pyttsx3.init('sapi5') #('sapi5')
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice',voices[0].id)
-    engine.setProperty('rate', 170)
-    engine.say(text)
-    engine.runAndWait()
+    tts = gTTS(text=text, lang="en")
+    filename = "voice.mp3"
+    tts.save(filename)
+    playsound.playsound(filename)
 
 def run_query(input):
     outp = ''
