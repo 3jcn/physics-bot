@@ -3,14 +3,19 @@ import playsound
 #import pywhatkit
 import wikipedia
 import datetime
+import random
+import io
 import webbrowser
 
 
 def talk(text):
     tts = gTTS(text=text, lang="en")
-    filename = "voice.mp3"
+    r1 = random.randint(1,10000000)
+    r2 = random.randint(1,10000000)
+    filename = str(r1)+str(r2)+".mp3"
     tts.save(filename)
-    playsound.playsound(filename)
+    playsound.playsound(filename,True)
+    os.remove(filename)
 
 def run_query(input):
     outp = ''
