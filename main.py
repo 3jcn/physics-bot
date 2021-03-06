@@ -3,7 +3,6 @@ from PIL import Image
 import string
 import random
 import time
-import pyaudio
 import speech_recognition as sr
 from querydata import run_query, talk
 import warnings
