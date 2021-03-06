@@ -14,8 +14,8 @@ def talk(text):
     r2 = random.randint(1,10000000)
     filename = str(r1)+str(r2)+".mp3"
     tts.save(filename)
-    playsound.playsound(filename)
-    #os.system(f'start(filename)')
+    #playsound.playsound(filename)
+    os.system("mpg123 "+ filename)
     os.remove(filename)
 
 def run_query(input):
