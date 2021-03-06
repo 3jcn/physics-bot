@@ -15,7 +15,7 @@ def talk(text):
     filename = str(r1)+str(r2)+".mp3"
     tts.save(filename)
     #playsound.playsound(filename)
-    os.system("mpg123 "+ filename)
+    os.system(filename)
     os.remove(filename)
 
 def run_query(input):
