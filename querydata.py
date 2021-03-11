@@ -9,13 +9,13 @@ import webbrowser
 
 
 def talk(text):
-    tts = gTTS(text=text, lang="en")
+    #tts = gTTS(text=text, lang="en")
     r1 = random.randint(1,10000000)
     r2 = random.randint(1,10000000)
     filename = str(r1)+str(r2)+".mp3"
     tts.save(filename)
-    #playsound.playsound(filename)
-    os.system(filename)
+    playsound.playsound(filename)
+    #os.system(filename)
     os.remove(filename)
 
 def run_query(input):
