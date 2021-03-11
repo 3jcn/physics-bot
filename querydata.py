@@ -1,4 +1,4 @@
-from gtts import gTTS
+#from gtts import gTTS
 import playsound
 #import pywhatkit
 import wikipedia
