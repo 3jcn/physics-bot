@@ -2,4 +2,4 @@ pywhatkit==3.9
 wikipedia==1.4.0
 pyttsx3==2.90
 SpeechRecognition==3.8.1
-Pillow==8.1.1
+Pillow==8.1.2
