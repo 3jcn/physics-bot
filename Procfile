@@ -1,1 +1,1 @@
-web: gunicorn physics-bot.wsgi
+web: python app.py
