@@ -5,7 +5,7 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
-import os
+#import os
 #import playsound 
 import speech_recognition as sr
 import warnings
@@ -15,14 +15,12 @@ warnings.filterwarnings('ignore')
 def talk(text):                         
       speech = gTTS(text, lang = 'en', slow = False)
       speech.save('trans.mp3')                          
-      audio_file = open('trans.mp3', 'rb')   
-      audio_bytes = audio_file.read()  
+      audio_file = open('trans.mp3', 'rb')            
+      audio_bytes = audio_file.read()            
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
-      os.remove("trans.mp3")
 	
 def start_function():
-    talk("Hi, my name is Max. I am professor Nguyen's assistant.")
-    talk("How may I help you with chapter 5, temperature and heat, or related topics?")
+    talk("Hi, my name is Max. I am professor Nguyen's assistant. How may I help you with chapter 5, temperature and heat, or related topics?")
     r = sr.Recognizer()
 
     with sr.Microphone() as source:                
@@ -268,12 +266,9 @@ def run_query(input):
         talk('thermodynamics means the dynamics of heat.')
         talk('its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
     elif 'first law of thermodynamics' in input:
-        talk('first law of thermodynamics is also called conservation of energy law')
-        talk('energy cannot be created or destroyed, but it can be changed from one form to another.')
-        talk('in other words, heat add to a system equals the change in internal energy of the system pluse work done by the system.')
+        talk('first law of thermodynamics is also called conservation of energy law. energy cannot be created or destroyed, but it can be changed from one form to another. in other words, heat add to a system equals the change in internal energy of the system pluse work done by the system.')
     elif 'second law of thermodynamics' in input:
-        talk('it is impossible for heat to flow spontaneously from a colder body to a hotter body.')
-        talk('in other words, the entropy of an isolated system never decreases.')
+        talk('it is impossible for heat to flow spontaneously from a colder body to a hotter body. in other words, the entropy of an isolated system never decreases.')
     elif 'third law of thermodynamics' in input:
         talk('it is impossible to attain a teperature of absolute zero in kelvin scale.')
     elif 'what is heat pump' in input:
