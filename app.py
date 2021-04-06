@@ -78,6 +78,8 @@ def run_query(input):
         info = ('There are five human senses: sight, hearing, touch, smell, taste.')
     elif 'unit system' in input:
         info = ('In SI system, the standard unit for length is meter, for mass is kilogram and for time is second.')
+    elif 'SI units' in input:
+        info = ('SI units is the international system of units. It is the modern form of the metric system. It is the only system of measurement with an official status in nearly every country in the world.')
     
     # CHAPTER TWO: MOTION
     
@@ -86,7 +88,7 @@ def run_query(input):
     elif 'what is mass' in input:
         info = ('Mass is amount of matter in a substance. Unit of mass in SI system is kilogram.')
     elif 'what is weight' in input:
-        info = ('Weight is different with mass. weight is the product of mass and gravitational acceleration. Unit of of weight in SI system is newton.')
+        info = ('Weight is different with mass. Weight is the product of mass and gravitational acceleration. Unit of of weight in SI system is Newton.')
     elif 'what is motion' in input:
         info = ('An object is in motion when it is undergoing a continuous change in position.')
     elif 'what is distance' in input:
@@ -112,6 +114,8 @@ def run_query(input):
     
     elif "newton's laws" in input:
         info = ('There are three laws of Newton in classical mechancis.')
+    elif "what is force" in input:
+        info = ('In classical mechancis, a force is an action that tends to maintain or alter the motion of an object or to distort it. Unit of force in SI system is Newton.')
     elif "first law of newton" in input:
         info = ('An object will remain at rest or in uniform motion in a straight line unless acted on by an external force.')
     elif "second law of newton" in input:
