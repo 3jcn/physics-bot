@@ -300,8 +300,9 @@ with header:
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
     
-    st.text('Hi Students, ask me some questions about first five chapters of introductory of physical science!')
-    st.text("For example: 'what is inertia, linear momentum, second law of Newton, temperature, specific heat, entropy, first law of thermodynamics,... ") 
+    st.text('Hi Students, ask me some questions about first five chapters:')
+    st.text('Measurement, Motion, Force, Work & Energy, Temperature & Heat') 
+    st.text("For example: 'what is displacement, inertia, linear momentum, second law of Newton, specific heat, entropy, first law of thermodynamics,... ") 
     
     user_input = st.text_input("Type your question here OR type 'exit' to quit chat bot.")
     if user_input:
