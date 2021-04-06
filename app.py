@@ -112,7 +112,7 @@ def run_query(input):
     elif 'what is acceleration' in input:
         info = ('In linear motion, acceleration is the time rate of change of velocity. Unit of acceleration is meter per second squared.')
     elif 'centripetal acceleration' in input:
-        info = ("Magnitude of centripetal acceleration equals square of speed divided by the radius of the circular path. It's direction points to the center of the circular path.")
+        info = ("Magnitude of centripetal acceleration equals square of speed divided by the radius of the circular path. Its direction points to the center of the circular path.")
     elif 'Distance traveled by a dropped object' in input:
         info = ('Distance traveled by a dropped object d = 0.5*g*t^2. Where g is 9.8 meter per second squared.')
         
