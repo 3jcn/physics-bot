@@ -264,7 +264,7 @@ def run_query(input):
         if 'wikipedia' and 'what' in input:
             info = wikipedia.summary(input,sentences=1)
     talk(info)
-    time.sleep(5)
+    time.sleep(10)
     st.write(info)
 
 #################################################################################
