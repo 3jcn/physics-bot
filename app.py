@@ -150,10 +150,10 @@ def run_query(input):
     elif 'what is energy' in input:
         info = ('Energy is the capacity of doing work. Unit of energy is joule.')
     elif 'kinetic energy' in input:
-        info = ('Kinetice energy is the energy of motion. It equals one half of mass time velocity squared. It is always positive.')
+        info = ('Kinetic energy is the energy of motion. It equals one half of mass time velocity squared. It is always positive.')
     elif 'potential energy' in input:
         info = ('Potential energy is the energy of position. It is equal to the weight of the object multiplied by the height. it can be negative.')
-    elif 'work and kinetic energy' in input:
+    elif 'work and kinetic energy' == input:
         info = ('Work done on the moving object is equal to the change in kinetic energy.')
     elif 'work and potential energy' in input:
         info = ('Work done by or against gravity sis equal to the change in potential energy.')
