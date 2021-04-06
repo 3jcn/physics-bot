@@ -1,0 +1,5 @@
+SpeechRecognition==3.8.1
+gTTS==2.2.2
+streamlit==0.77.0
+wikipedia==1.4.0
+Pillow==8.2.0

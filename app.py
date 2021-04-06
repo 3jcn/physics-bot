@@ -1,3 +1,4 @@
+import streamlit as st
 from PIL import Image, ImageTk
 import time
 from gtts import gTTS
