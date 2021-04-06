@@ -6,6 +6,7 @@ import wikipedia
 import datetime
 import webbrowser
 import playsound
+import pywhatkit
 import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
