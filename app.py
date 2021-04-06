@@ -115,7 +115,7 @@ def run_query(input):
     elif "newton's laws" in input:
         info = ('There are three laws of Newton in classical mechancis.')
     elif "what is force" in input:
-        info = ('In classical mechancis, a force is an action that tends to maintain or alter the motion of an object or to distort it. Unit of force in SI system is Newton.')
+        info = ('In classical mechanics, a force is an action that tends to maintain or alter the motion of an object or to distort it. Unit of force in SI system is Newton.')
     elif "first law of newton" in input:
         info = ('An object will remain at rest or in uniform motion in a straight line unless acted on by an external force.')
     elif "second law of newton" in input:
