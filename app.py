@@ -300,8 +300,8 @@ with header:
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
     
-    st.text('Hi Students, ask me some questions about physical science!')
-    st.text("For example: 'what is temperature, specific heat, entropy, first law of thermodynamics,... ") 
+    st.text('Hi Students, ask me some questions about first five chapters of introductory of physical science!')
+    st.text("For example: 'what is inertia, linear momentum, second law of Newton, temperature, specific heat, entropy, first law of thermodynamics,... ") 
     
     user_input = st.text_input("Enter your question here OR click 'Chat With Max' button:")
     if user_input:
