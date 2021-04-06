@@ -161,7 +161,7 @@ def run_query(input):
     elif 'how to compute heat' in input:
         talk("first, determine how many steps for the process of changing phases and temperatures. apply formula H = mass times specific heat, times the change in temperature, if there is no phase change in each step.  apply formula H = mass time latent heat of fusion or vaporization, if there is a phase change in each step. the answer is the total of heat for all steps")
     elif 'main topics of chapter five' in input:
-        talk('In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws. we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
+        talk("In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws. we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
     elif 'what is temperature' in input:
         talk('temperature is a measure of the average kinetic energy of the molecules of a substance. unit of temperature in SI system is kelvin.')
     elif 'what is thermometer' in input:
