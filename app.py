@@ -303,9 +303,9 @@ with header:
     st.text('Hi Students, ask me some questions about first five chapters of introductory of physical science!')
     st.text("For example: 'what is inertia, linear momentum, second law of Newton, temperature, specific heat, entropy, first law of thermodynamics,... ") 
     
-    user_input = st.text_input("Enter your question here OR click 'Chat With Max' button:")
+    user_input = st.text_input("Type your question here OR type 'exit' to quit chat bot.")
     if user_input:
-        if 'no' == user_input:
+        if 'exit' == user_input:
             talk('on behalf of professor Nguyen, thank you for studying. bye.')
         else:
             run_query(user_input)
