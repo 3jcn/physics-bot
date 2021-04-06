@@ -5,7 +5,7 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
-from playsound import playsound 
+import playsound 
 import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
