@@ -255,7 +255,7 @@ def run_query(input):
     elif 'what is heat pump' in input:
         info = ('A heat pump is a device that uses work input to transfer heat from a low temperature reservoir to a high temperature reservoir.')
     elif 'entropy' in input:
-        info = ('Entropy is a mathematical quantity. entropy can be expressed as a measure of the disorder of a system. The total entropy of the universe increases in every natural process.')
+        info = ('Entropy is a mathematical quantity. Entropy can be expressed as a measure of the disorder of a system. The total entropy of the universe increases in every natural process.')
     elif 'what is heat engine' in input:
         info = ('A heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ')
     elif 'from wikipedia' in input:
@@ -264,6 +264,7 @@ def run_query(input):
         if 'wikipedia' and 'what' in input:
             info = wikipedia.summary(input,sentences=1)
     talk(info)
+    sleep(5)
     st.write(info)
 
 #################################################################################
