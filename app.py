@@ -307,9 +307,9 @@ with header:
     if user_input:
         if 'exit' == user_input:
             info = ('on behalf of professor Nguyen, thank you for studying. bye.')
-	    talk(info)
-	    time.sleep(4)
-	    st.write(info)
+            talk(info)
+            time.sleep(4)
+            st.write(info)
         else:
             run_query(user_input)
     #st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
