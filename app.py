@@ -5,6 +5,7 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
+import os
 #import playsound 
 import speech_recognition as sr
 import warnings
@@ -18,6 +19,7 @@ def talk(text):
       audio_bytes = audio_file.read()         
       #playsound(audio_bytes)      
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
+      os.remove("trans.mp3")
 	
 def start_function():
     talk("Hi, my name is Max. I am professor Nguyen's assistant.")
