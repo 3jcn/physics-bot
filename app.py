@@ -5,6 +5,7 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
+from playsound import playsound 
 import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
@@ -13,9 +14,10 @@ warnings.filterwarnings('ignore')
 def talk(text):                         
       speech = gTTS(text, lang = 'en', slow = False)
       speech.save('trans.mp3')                          
-      audio_file = open('trans.mp3', 'rb')            
-      audio_bytes = audio_file.read()            
-      st.audio(audio_bytes, format='audio/ogg',start_time=0)
+      audio_file = open('trans.mp3', 'rb')      
+      playsound(‘trans.mp3’)
+      #audio_bytes = audio_file.read()            
+      #st.audio(audio_bytes, format='audio/ogg',start_time=0)
 	
 def start_function():
     talk("Hi, my name is Max. I am professor Nguyen's assistant.")
