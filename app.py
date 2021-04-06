@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image, ImageTk
+from PIL import Image
 import time
 from gtts import gTTS
 import wikipedia
