@@ -306,7 +306,10 @@ with header:
     user_input = st.text_input("Type your question here OR type 'exit' to quit chat bot.")
     if user_input:
         if 'exit' == user_input:
-            talk('on behalf of professor Nguyen, thank you for studying. bye.')
+            info = ('on behalf of professor Nguyen, thank you for studying. bye.')
+	    talk(info)
+	    time.sleep(4)
+	    st.write(info)
         else:
             run_query(user_input)
     #st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
