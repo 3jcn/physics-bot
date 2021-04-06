@@ -59,8 +59,7 @@ def run_query(input):
     # CHAPTER ONE: MEASUREMENT
     
     elif 'what is science' in input:
-        outp = 'Science is a systematically organized body of knowledge on a particular subject.'
-        talk(outp)
+        talk('Science is a systematically organized body of knowledge on a particular subject.')
     elif 'physical science' in input:
         talk('there are five major divisions in physical science: physics, chemistry, astronomy, geology and meteorology.')
     elif 'what is physics' in input:
@@ -97,8 +96,7 @@ def run_query(input):
     elif 'what is speed' in input:
         talk('speed is a scalar quatity. average speed equals distance traveled divided by time to travel the distance. unit of speed in SI system is meter per second.')
     elif 'uniform circular motion' in input:
-        talk('uniform circular motion is the motion of an object in a circle at a constant speed.
-        an object in uniform ciruclar motion has acceleration named centripetal acceleration.')
+        talk('uniform circular motion is the motion of an object in a circle at a constant speed. an object in uniform ciruclar motion has acceleration named centripetal acceleration.')
     elif 'linear motion' in input:
         talk('linear motion is the motion in one direction.')
     elif 'what is acceleration' in input:
@@ -115,16 +113,13 @@ def run_query(input):
     elif "first law of newton" in input:
         talk('an object will remain at rest or in uniform motion in a straight line unless acted on by an external force.')
     elif "second law of newton" in input:
-        talk('the acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitud of the force')
-        talk('and inversely proportional to the mass of the object.')
+        talk('the acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitud of the force. and inversely proportional to the mass of the object.')
     elif "third law of newton" in input:
         talk('for every action there is an equal and opposite reaction')
     elif "newton's gravitational law" in input:
-        talk('every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses')
-        talk('and inversely proportional to the square of the distance between them.')
+        talk('every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses, and inversely proportional to the square of the distance between them.')
     elif "newton's law of gravitation" in input:
-        talk('every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses')
-        talk('and inversely proportional to the square of the distance between them.')
+        talk('every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses, and inversely proportional to the square of the distance between them.')
     elif 'what is torque' in input:
         talk('torque is a vector quantity. it is the vector product of force and lever arm.')
     elif 'linear momentum' in input:
@@ -134,14 +129,12 @@ def run_query(input):
     elif 'conservation of angular momentum' in input:
         talk('the angular momentum of an object remains constant if there is no external unbalanced torque acting on it.')
     elif 'what is angular momentum' in input:
-        talk('angular momentum is a vector quantity.')
-        talk('it is the product of mass and velocity of an object and distance from the object to the axis of rotation.')
+        talk('angular momentum is a vector quantity. it is the product of mass and velocity of an object and distance from the object to the axis of rotation.')
         
     # CHAPTER FOUR: WORK & ENERGY
     
     elif 'what is work' in input:
-        talk('In physics, work applied on an object is the product of distance object moved and horizontall component of force applied on the object ')
-        talk('unit of work in SI system is joule.')
+        talk('In physics, work applied on an object is the product of distance object moved and horizontall component of force applied on the object. unit of work in SI system is joule.')
     elif 'what is energy' in input:
         talk('energy is the capacity of doing work. unit of energy is joule.')
     elif 'kinetic energy' in input:
@@ -153,31 +146,24 @@ def run_query(input):
     elif 'work and potential energy' in input:
         talk('work done by or against gravity sis equal to the change in potential energy.')
     elif 'conservation of energy' in input:
-        talk('total energy of an isolated system remains constant.')
-        talk('energy cannot be created or destroyed, but it can change from one form to another form of energy.')
+        talk('total energy of an isolated system remains constant. energy cannot be created or destroyed, but it can change from one form to another form of energy.')
     elif 'what is power' in input:
         talk('power is the time rate of change of work. unit of power in SI system is Watt.')
     elif 'forms of energy' in input:
         talk('common forms of energy are: chemical energy, electrical energy, nuclear energy, thermal energy, and hydroelectric energy')
     elif 'energy sources' in input:
-        talk('common energy sources are coal, oil, natural gas, nuclear, hydroelectric, and renewable sources such as ')
-        talk('solar, wind, biofuels, biomass, geothermal, and tides.')
+        talk('common energy sources are coal, oil, natural gas, nuclear, hydroelectric, and renewable sources such as solar, wind, biofuels, biomass, geothermal, and tides.')
              
     # CHAPTER FIVE: TEMPERATURE & HEAT
     
     elif 'what is substance' == input:
         talk(' a substance is a form of matter that has constant chemical composition and characteristic properties.')
     elif 'how to compute heat' in input:
-        talk("first, determine how many steps for the process of changing phases and temperatures")
-        talk("apply formula H = mass times specific heat, times the change in temperature, if there is no phase change in each step")
-        talk("apply formula H = mass time latent heat of fusion or vaporization, if there is a phase change in each step")
-        talk("the answer is the total of heat for all steps")
+        talk("first, determine how many steps for the process of changing phases and temperatures. apply formula H = mass times specific heat, times the change in temperature, if there is no phase change in each step.  apply formula H = mass time latent heat of fusion or vaporization, if there is a phase change in each step. the answer is the total of heat for all steps")
     elif 'main topics of chapter five' in input:
-        talk('In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws.
-        we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
+        talk('In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws. we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
     elif 'what is temperature' in input:
-        talk('temperature is a measure of the average kinetic energy of the molecules of a substance.
-        unit of temperature in SI system is kelvin.')
+        talk('temperature is a measure of the average kinetic energy of the molecules of a substance. unit of temperature in SI system is kelvin.')
     elif 'what is thermometer' in input:
         talk('thermometer is an instrument to measure temperature.')
     elif 'what is heat' == input:
@@ -187,13 +173,11 @@ def run_query(input):
     elif "what is unit of heat" in input:
         talk('unit of heat in SI system is joule.')
     elif "what is calorie" == input:
-        talk('a calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure.
-        one food Calorie is equal to 1000 calories or 4186 joules.')
+        talk('a calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure. one food Calorie is equal to 1000 calories or 4186 joules.')
     elif 'what is specific heat' == input:
         talk('specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
     elif 'specific heat capacity' in input:
-        talk('specific heat capacity is the same as specific heat.
-        specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
+        talk('specific heat capacity is the same as specific heat. specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
     elif input == 'what is specific heat of water':
         talk('water has highest specific heat capacity 4186 joule per kilogram per celsius')
     elif 'specific heat of iron' in input:
@@ -257,11 +241,9 @@ def run_query(input):
     elif 'pressure' in input:
         talk('pressure is defined as the force per unit area. unit of pressure in SI system is pascal or Newton per meter squared.')
     elif 'ideal gas law' in input:
-        talk('the pressure of an ideal gas is derectly proportional to the number of molecules and to the kelvin temperature')
-        talk('and inversely proportional to the volume.')
+        talk('the pressure of an ideal gas is derectly proportional to the number of molecules and to the kelvin temperature. and inversely proportional to the volume.')
     elif 'what is thermodynamics' == input:
-        talk('thermodynamics means the dynamics of heat.')
-        talk('its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
+        talk('thermodynamics means the dynamics of heat. its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
     elif 'first law of thermodynamics' in input:
         talk('first law of thermodynamics is also called conservation of energy law. energy cannot be created or destroyed, but it can be changed from one form to another. in other words, heat add to a system equals the change in internal energy of the system pluse work done by the system.')
     elif 'second law of thermodynamics' in input:
@@ -271,13 +253,9 @@ def run_query(input):
     elif 'what is heat pump' in input:
         talk('a heat pump is a device that uses work input to transfer heat from a low temperature reservoir to a high temperature reservoir.')
     elif 'entropy' in input:
-        outp ='entropy is a mathematical quantity. entropy can be expressed as a measure of the disorder of a system.'
-        talk(outp)
-        outp = 'the total entropy of the universe increases in every natural process.'
-        talk(outp)    
+        talk('entropy is a mathematical quantity. entropy can be expressed as a measure of the disorder of a system. the total entropy of the universe increases in every natural process.')
     elif 'what is heat engine' in input:
-        outp='a heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. '
-        talk(oupt)
+        talk('a heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ')
     elif 'from wikipedia' in input:
         outp = wikipedia.summary(input,1)
         talk(outp)
