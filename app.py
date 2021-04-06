@@ -85,7 +85,7 @@ def run_query(input):
     
     elif 'what is inertia' in input:
         out = 'Inertia is the tendency of an object to remain at rest or remain in motion. Inertia is related to mass of an object.'
-	talk(out)
+        talk(out)
     elif 'what is mass' in input:
         talk('mass is amount of matter in a substance. unit of mass in SI system is kilogram.')
     elif 'what is weight' in input:
