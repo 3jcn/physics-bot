@@ -81,7 +81,7 @@ def run_query(input):
     elif 'what is meter' in input:
         info = ('In SI system, meter is the base units of distance. One meter is the distance traveled by light in a vacuum in 1/299,792,458 seconds.')
     elif 'what is kilogram' in input:
-        info = ("In SI system, kilogram is the base units of mass. One kilogram equals Planck's constant divided by 6.62607015 x 10^-34 s/m^2.")
+        info = ("In SI system, kilogram is the base units of mass. One kilogram equals Planck's constant divided by 6.62607015 x 10^-34 second/m^2.")
     elif 'what is second' in input:
         info = ("In SI system, second is the base units of time. One second is exactly 9,192,631,770 cycles of radiation of an atom of casesium-133.")
     elif 'SI units' in input:
