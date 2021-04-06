@@ -247,7 +247,7 @@ def run_query(input):
     elif 'what is thermodynamics' == input:
         info = ('Thermodynamics means the dynamics of heat. Its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
     elif 'first law of thermodynamics' in input:
-        info = ('First law of thermodynamics is also called conservation of energy law. Energy cannot be created or destroyed, but it can be changed from one form to another. in other words, heat add to a system equals the change in internal energy of the system pluse work done by the system.')
+        info = ('First law of thermodynamics is also called conservation of energy law. Energy cannot be created or destroyed, but it can be changed from one form to another. In other words, heat add to a system equals the change in internal energy of the system plus work done by the system.')
     elif 'second law of thermodynamics' in input:
         info = ('It is impossible for heat to flow spontaneously from a colder body to a hotter body. In other words, the entropy of an isolated system never decreases.')
     elif 'third law of thermodynamics' in input:
