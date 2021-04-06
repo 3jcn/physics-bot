@@ -21,7 +21,7 @@ def talk(text):
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
 	
 def start_function():
-    talk("Hi, my name is Max. I am professor Nguyen's assistant. How may I help you with chapter 5, temperature and heat, or related topics?")
+    talk("Hi, my name is Max. I am professor Nguyen's assistant bot. How may I help you with chapter 5, temperature and heat, or related topics?")
     r = sr.Recognizer()
 
     with sr.Microphone() as source:                
@@ -295,7 +295,7 @@ with header:
 
     html_temp = """
 	<div style="background-color:brown; padding:10px">
-	<h2 style="color:white; text-align:center;">My name is Max. I am professor Nguyen's assistant.</h2>
+	<h2 style="color:white; text-align:center;">My name is Max. I am professor Nguyen's assistant bot.</h2>
 	</div>
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
