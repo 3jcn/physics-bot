@@ -306,7 +306,7 @@ with header:
     user_input = st.text_input("Type your question here OR type 'exit' to quit chat bot.")
     if user_input:
         if 'exit' == user_input:
-            info = ('on behalf of professor Nguyen, thank you for studying. bye.')
+            info = ('On behalf of professor Nguyen, thank you for studying. Bye!')
             talk(info)
             time.sleep(4)
             st.write(info)
