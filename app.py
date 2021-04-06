@@ -146,7 +146,7 @@ def run_query(input):
     # CHAPTER FOUR: WORK & ENERGY
     
     elif 'what is work' in input:
-        info = ('In physics, work applied on an object is the product of distance object moved and horizontall component of force applied on the object. Unit of work in SI system is joule.')
+        info = ('In physics, work applied on an object is the product of distance object moved and horizontal component of force applied on the object. Unit of work in SI system is joule.')
     elif 'what is energy' in input:
         info = ('Energy is the capacity of doing work. Unit of energy is joule.')
     elif 'kinetic energy' in input:
