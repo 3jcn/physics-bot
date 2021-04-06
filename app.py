@@ -1,7 +1,6 @@
-import tkinter as tk
 from PIL import Image, ImageTk
 import time
-import pyttsx3
+from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
@@ -9,15 +8,13 @@ import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
 
-root = tk.Tk()
 
-def talk(text):
-    engine = pyttsx3.init('sapi5') 
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice',voices[0].id)
-    engine.setProperty('rate', 170)
-    engine.say(text)
-    engine.runAndWait()
+def talk(text):                         
+      speech = gTTS(text, lang = 'en', slow = False)
+      speech.save('trans.mp3')                          
+      audio_file = open('trans.mp3', 'rb')            
+      audio_bytes = audio_file.read()            
+      st.audio(audio_bytes, format='audio/ogg',start_time=0)
 	
 def start_function():
     talk("Hi, my name is Max. I am professor Nguyen's assistant.")
@@ -293,28 +290,3 @@ def run_query(input):
             outp=wikipedia.summary(input,sentences=1)
             talk(outp)
 
-canvas = tk.Canvas(root, width=600, height=300)
-canvas.grid(columnspan=3, rowspan=3)
-
-#logo
-logo = Image.open('max.png')
-logo = ImageTk.PhotoImage(logo)
-logo_label = tk.Label(image=logo)
-logo_label.image = logo
-logo_label.grid(column=1, row=0)
-
-#instructions
-instructions = tk.Label(root, text="Select a PDF file on your computer to extract all its text", font="Raleway")
-instructions.grid(columnspan=3, column=0, row=1)
-       
-
-#browse button
-browse_text = tk.StringVar()
-browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:start_function(), font="Raleway", bg="#20bebe", fg="white", height=2, width=15)
-browse_text.set("Browse")
-browse_btn.grid(column=1, row=2)
-
-canvas = tk.Canvas(root, width=600, height=250)
-canvas.grid(columnspan=3)
-
-root.mainloop()
