@@ -6,17 +6,16 @@ import wikipedia
 import datetime
 import webbrowser
 import playsound
-import pywhatkit
+#import pywhatkit
 import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
 
-out = ''
+info = ''
 
 def talk(text):                         
       speech = gTTS(text, lang = 'en', slow = False)
-      speech.save('trans.mp3')       
-      #playsound('trans.mp3')
+      speech.save('trans.mp3') 
       audio_file = open('trans.mp3', 'rb')            
       audio_bytes = audio_file.read()            
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
@@ -31,8 +30,8 @@ def start_function():
             try:
                 command = r.recognize_google(audio)
                 if 'no' in command:   
-                    out='On behalf of professor Nguyen, thank you for studying. Chat with you later. Bye.'
-                    talk(out)
+                    info='On behalf of professor Nguyen, thank you for studying. Chat with you later. Bye.'
+                    talk(info)
                     break
                 else:
                     run_query(command)
@@ -41,7 +40,6 @@ def start_function():
                 pass
 
 def run_query(input):
-    outp = ''
     if 'play' in input:
         song = input.replace('play','')
         talk('playing...'+ song)
@@ -54,38 +52,37 @@ def run_query(input):
         pywhatkit.search(input)
         talk('searching from google')
     elif 'what time is it' in input:
-        time = datetime.datetime.now().strftime('%I:%M %p')
-        talk('current time is ' + time)
+        info = datetime.datetime.now().strftime('%I:%M %p')
+        talk('current time is ' + info)
     elif 'what date is it' in input:
-        date = datetime.datetime.now().date()
-        talk(date)
+        info = datetime.datetime.now().date()
+        talk(info)
         
     # CHAPTER ONE: MEASUREMENT
     
     elif 'what is science' in input:
-        talk('Science is a systematically organized body of knowledge on a particular subject.')
+        info = 'Science is a systematically organized body of knowledge on a particular subject.'
     elif 'physical science' in input:
-        talk('there are five major divisions in physical science: physics, chemistry, astronomy, geology and meteorology.')
+        info = ('there are five major divisions in physical science: physics, chemistry, astronomy, geology and meteorology.')
     elif 'what is physics' in input:
-        talk('Physics is a major division of physical science. it is concerned with the basic principle and concepts of matter and energy')
+        info = ('Physics is a major division of physical science. it is concerned with the basic principle and concepts of matter and energy')
     elif 'what is chemistry' in input:
-        talk('Chemistry deals with the composition, structure, and reactions of matter.')
+        info = ('Chemistry deals with the composition, structure, and reactions of matter.')
     elif 'what is astronomy' in input:
-        talk('what is astronomy is the study of the universe: space, time, matter, energy')
+        info = ('what is astronomy is the study of the universe: space, time, matter, energy')
     elif 'what is geology' in input:
-        talk('Geology is the science of the planet Earth: composition, structure, processes, history')
+        info = ('Geology is the science of the planet Earth: composition, structure, processes, history')
     elif 'what is meteorology' in input:
-        talk('meteorology is the study of the atmosphere.')
+        info = ('meteorology is the study of the atmosphere.')
     elif 'human senses' in input:
-        talk('there are five human senses: sight, hearing, touch, smell, taste.')
+        info = ('there are five human senses: sight, hearing, touch, smell, taste.')
     elif 'unit system' in input:
-        talk('in SI system, the standard unit for length is meter, for mass is kilogram and for time is second.')
+        info = ('in SI system, the standard unit for length is meter, for mass is kilogram and for time is second.')
     
     # CHAPTER TWO: MOTION
     
     elif 'what is inertia' in input:
-        out = 'Inertia is the tendency of an object to remain at rest or remain in motion. Inertia is related to mass of an object.'
-        talk(out)
+        info = 'Inertia is the tendency of an object to remain at rest or remain in motion. Inertia is related to mass of an object.'
     elif 'what is mass' in input:
         talk('mass is amount of matter in a substance. unit of mass in SI system is kilogram.')
     elif 'what is weight' in input:
@@ -268,7 +265,8 @@ def run_query(input):
         if 'wikipedia' and 'what' in input:
             outp=wikipedia.summary(input,sentences=1)
             talk(outp)
-    st.write(out)
+    talk(info)
+    st.write(info)
 
 #################################################################################
 header = st.beta_container()
@@ -307,8 +305,6 @@ with header:
     
     st.text('Hi Students, ask me some questions about physical science!')
     st.text("For example: 'what is temperature, specific heat, entropy, first law of thermodynamics,... ") 
-    st.text("If you are tired, you can ask me to play music by saying: play 'song name or artist name'")
-    st.text("or 'who is ..?', 'what time is it?', 'what date is it?'...")
     
     user_input = st.text_input("Enter your question here OR click 'Chat With Max' button:")
     if user_input:
@@ -316,11 +312,11 @@ with header:
             talk('on behalf of professor Nguyen, thank you for studying. bye.')
         else:
             run_query(user_input)
-    st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
+    #st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
 
 
-    button_start = st.button('Chat With Max')
-    if button_start:
-    	start_function()
+    #button_start = st.button('Chat With Max')
+    #if button_start:
+    	#start_function()
 
 ############################################################################      
