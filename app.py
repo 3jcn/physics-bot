@@ -16,8 +16,7 @@ def talk(text):
       speech = gTTS(text, lang = 'en', slow = False)
       speech.save('trans.mp3')                          
       audio_file = open('trans.mp3', 'rb')   
-      audio_bytes = audio_file.read()         
-      #playsound(audio_bytes)      
+      audio_bytes = audio_file.read()  
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
       os.remove("trans.mp3")
 	
