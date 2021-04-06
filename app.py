@@ -258,8 +258,6 @@ def run_query(input):
         info = ('Entropy is a mathematical quantity. Entropy can be expressed as a measure of the disorder of a system. The total entropy of the universe increases in every natural process.')
     elif 'what is heat engine' in input:
         info = ('A heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ')
-    elif 'from wikipedia' in input:
-        info = wikipedia.summary(input,1)
     else:
         if 'wikipedia' and 'what' in input:
             info = wikipedia.summary(input,sentences=1)
