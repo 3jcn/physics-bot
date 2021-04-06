@@ -125,7 +125,7 @@ def run_query(input):
     elif 'what is torque' in input:
         info = ('Torque is a vector quantity. It is the vector product of force and lever arm.')
     elif 'linear momentum' in input:
-        info = ('Linear momentum is the product of mass and velocity of an object. it is a vector quantity.')
+        info = ('Linear momentum is the product of mass and velocity of an object. It is a vector quantity.')
     elif 'conservation of linear momentum' in input:
         info = ('The linear momentum of an object remains constant if there is no external, unbalanced force acting on it.')
     elif 'conservation of angular momentum' in input:
@@ -138,9 +138,9 @@ def run_query(input):
     elif 'what is work' in input:
         info = ('In physics, work applied on an object is the product of distance object moved and horizontall component of force applied on the object. Unit of work in SI system is joule.')
     elif 'what is energy' in input:
-        info = ('Energy is the capacity of doing work. unit of energy is joule.')
+        info = ('Energy is the capacity of doing work. Unit of energy is joule.')
     elif 'kinetic energy' in input:
-        info = ('Kinetice energy is the energy of motion. it equals one half of mass time velocity squared. it is always positive.')
+        info = ('Kinetice energy is the energy of motion. It equals one half of mass time velocity squared. It is always positive.')
     elif 'potential energy' in input:
         info = ('Potential energy is the energy of position. It is equal to the weight of the object multiplied by the height. it can be negative.')
     elif 'work and kinetic energy' in input:
