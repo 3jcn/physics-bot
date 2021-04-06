@@ -5,8 +5,6 @@ from gtts import gTTS
 import wikipedia
 import datetime
 import webbrowser
-#import os
-#import playsound 
 import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
@@ -93,15 +91,14 @@ def run_query(input):
     elif 'what is distance' in input:
         talk('Distance is the actual length of the path taken by an object. it is a scalar quatity. unit of distance in SI system is meter.')
     elif 'displacement' in input:
-        talk('displacement is a vector quantity.')
-        talk('displacement is the simply the straight-line distance between where the object started and where it ended up plus direction.')
+        talk('displacement is a vector quantity.displacement is the simply the straight-line distance between where the object started and where it ended up plus direction.')
     elif 'what is velocity' in input:
         talk('velocity is a vector. it equals displacement divided by time. unit of velocity in SI system is meter per second.')
     elif 'what is speed' in input:
         talk('speed is a scalar quatity. average speed equals distance traveled divided by time to travel the distance. unit of speed in SI system is meter per second.')
     elif 'uniform circular motion' in input:
-        talk('uniform circular motion is the motion of an object in a circle at a constant speed.')
-        talk('an object in uniform ciruclar motion has acceleration named centripetal acceleration.')
+        talk('uniform circular motion is the motion of an object in a circle at a constant speed.
+        an object in uniform ciruclar motion has acceleration named centripetal acceleration.')
     elif 'linear motion' in input:
         talk('linear motion is the motion in one direction.')
     elif 'what is acceleration' in input:
@@ -176,11 +173,11 @@ def run_query(input):
         talk("apply formula H = mass time latent heat of fusion or vaporization, if there is a phase change in each step")
         talk("the answer is the total of heat for all steps")
     elif 'main topics of chapter five' in input:
-        talk('In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws')
-        talk("we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
+        talk('In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws.
+        we also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
     elif 'what is temperature' in input:
-        talk('temperature is a measure of the average kinetic energy of the molecules of a substance.')
-        talk('unit of temperature in SI system is kelvin.')
+        talk('temperature is a measure of the average kinetic energy of the molecules of a substance.
+        unit of temperature in SI system is kelvin.')
     elif 'what is thermometer' in input:
         talk('thermometer is an instrument to measure temperature.')
     elif 'what is heat' == input:
@@ -190,13 +187,13 @@ def run_query(input):
     elif "what is unit of heat" in input:
         talk('unit of heat in SI system is joule.')
     elif "what is calorie" == input:
-        talk('a calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure')
-        talk('one food Calorie is equal to 1000 calories or 4186 joules.')
+        talk('a calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure.
+        one food Calorie is equal to 1000 calories or 4186 joules.')
     elif 'what is specific heat' == input:
         talk('specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
     elif 'specific heat capacity' in input:
-        talk('specific heat capacity is the same as specific heat')
-        talk('specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
+        talk('specific heat capacity is the same as specific heat.
+        specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
     elif input == 'what is specific heat of water':
         talk('water has highest specific heat capacity 4186 joule per kilogram per celsius')
     elif 'specific heat of iron' in input:
