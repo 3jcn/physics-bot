@@ -10,7 +10,7 @@ import speech_recognition as sr
 import warnings
 warnings.filterwarnings('ignore')
 
-out = 'Hi'
+out = ''
 
 def talk(text):                         
       speech = gTTS(text, lang = 'en', slow = False)
@@ -19,7 +19,6 @@ def talk(text):
       audio_file = open('trans.mp3', 'rb')            
       audio_bytes = audio_file.read()            
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
-      st.write(out)
 	
 def start_function():
     talk("Hi, my name is Max. I am professor Nguyen's assistant. How may I help you with chapter 5, temperature and heat, or related topics?")
@@ -268,6 +267,7 @@ def run_query(input):
         if 'wikipedia' and 'what' in input:
             outp=wikipedia.summary(input,sentences=1)
             talk(outp)
+    st.write(out)
 
 #################################################################################
 header = st.beta_container()
