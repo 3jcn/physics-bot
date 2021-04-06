@@ -83,7 +83,7 @@ def run_query(input):
     elif 'what is kilogram' in input:
         info = ("In SI system, kilogram is the base units of mass. One kilogram equals Planck's constant divided by 6.62607015 x 10^-34 second/m^2.")
     elif 'what is second' in input:
-        info = ("In SI system, second is the base units of time. One second is exactly 9,192,631,770 cycles of radiation of an atom of casesium-133.")
+        info = ("In SI system, second is the base units of time. One second is exactly 9,192,631,770 cycles of radiation of an atom of caesium-133.")
     elif 'SI units' in input:
         info = ('SI units is the international system of units. It is the modern form of the metric system. It is the only system of measurement with an official status in nearly every country in the world.')
     
