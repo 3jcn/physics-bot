@@ -125,7 +125,7 @@ def run_query(input):
     elif "first law of newton" in input:
         info = ('An object will remain at rest or in uniform motion in a straight line unless acted on by an external force.')
     elif "second law of newton" in input:
-        info = ('The acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitud of the force. and inversely proportional to the mass of the object.')
+        info = ('The acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitude of the force. and inversely proportional to the mass of the object.')
     elif "third law of newton" in input:
         info = ('For every action there is an equal and opposite reaction')
     elif "newton's gravitational law" in input:
