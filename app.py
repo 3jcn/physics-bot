@@ -21,7 +21,7 @@ def talk(text):
       st.audio(audio_bytes, format='audio/ogg',start_time=0)
 	
 def start_function():
-    talk("Hi, my name is Max. I am professor Nguyen's assistant bot. How may I help you with chapter 5, temperature and heat, or related topics?")
+    talk("Hi, my name is Max. I am professor Nguyen's assistant bot. How may I help you with first five chapters, or related topics?")
     r = sr.Recognizer()
 
     with sr.Microphone() as source:                
