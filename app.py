@@ -253,7 +253,7 @@ def run_query(input):
     elif 'pressure' in input:
         info = ('Pressure is defined as the force per unit area. unit of pressure in SI system is pascal or Newton per meter squared.')
     elif 'ideal gas law' in input:
-        info = ('The pressure of an ideal gas is derectly proportional to the number of molecules and to the kelvin temperature. and inversely proportional to the volume.')
+        info = ('The pressure of an ideal gas is directly proportional to the number of molecules and to the kelvin temperature. and inversely proportional to the volume.')
     elif 'what is thermodynamics' == input:
         info = ('Thermodynamics means the dynamics of heat. Its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
     elif 'first law of thermodynamics' in input:
