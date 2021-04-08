@@ -78,7 +78,7 @@ def run_query(input):
         info = ('There are five human senses: sight, hearing, touch, smell, taste.')
     elif 'unit system' in input:
         info = ('In SI system, the standard unit for length is meter, for mass is kilogram and for time is second.')
-    elif 'what is meter' in input:
+    elif 'what is one meter' == input:
         info = ('In SI system, meter is the base units of distance. One meter is the distance traveled by light in a vacuum in 1 per 299,792,458 seconds.')
     elif 'what is kilogram' in input:
         info = ("In SI system, kilogram is the base units of mass. One kilogram equals Planck's constant divided by 6.62607015 x 10^-34 second/m^2.")
