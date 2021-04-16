@@ -86,7 +86,10 @@ def run_query(input):
         info = ("In SI system, second is the base units of time. One second is exactly 9,192,631,770 cycles of radiation of an atom of caesium-133.")
     elif 'SI units' in input:
         info = ('SI units is the international system of units. It is the modern form of the metric system. It is the only system of measurement with an official status in nearly every country in the world.')
-    
+    elif 'what is time' == input:
+	info = ("Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past," 
+		 " through the present, into the future. In terms of mesurement, the second is the standard unit of time."
+		 " Time is often referred to as a fourth dimension, along with three spatial dimensions.")
     # CHAPTER TWO: MOTION
     
     elif 'what is inertia' in input:
