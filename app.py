@@ -297,7 +297,7 @@ st.markdown("""
 )
 
 with header:
-    st.title('Virtual Assistant for Introductory of Physical Science - PSC 110')
+    st.title('Virtual Assistant for Introduction to Physical Science')
     st.text('@Author: Thomas Nguyen Date: 28 Feb 2021')
 
     image = Image.open('max.png')
@@ -305,7 +305,7 @@ with header:
 
     html_temp = """
 	<div style="background-color:brown; padding:10px">
-	<h2 style="color:white; text-align:center;">My name is Mia. I am professor Nguyen's assistant chat bot.</h2>
+	<h2 style="color:white; text-align:center;">My name is Mia - Virtual assistant chat bot.</h2>
 	</div>
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
