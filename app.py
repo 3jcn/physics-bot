@@ -301,7 +301,7 @@ def run_query(input):
         info = ("American chemist Gilbert Newton Lewis developed electron dot symbols to help explain chemical bonding."
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
 		" and the valence electrons are shown as dots arranged in four groups of one or two dots around the symbol.")
-    elif "Lewis structure" in input:
+    elif "Lewis structure".lower() in input:
         info = ("Lewis structures use Lewis symbols to show valence electrons in molecules and ions of compounds.")
     else:
         if 'wikipedia' and 'what' in input:
