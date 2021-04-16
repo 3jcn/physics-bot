@@ -92,7 +92,7 @@ def run_query(input):
 		" Time is often referred to as a fourth dimension, along with three spatial dimensions.")
     elif 'what is space' == input:
         info = ("Space is the boundless three-dimensional extent in which objects and events have relative position and direction."
-		" Physical space is often conceived in three linear dimensions, 
+		" Physical space is often conceived in three linear dimensions," 
 		" although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime")
     # CHAPTER TWO: MOTION
     
