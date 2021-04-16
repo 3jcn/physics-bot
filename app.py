@@ -292,8 +292,8 @@ def run_query(input):
 		" the biological molecules in our cells. Unlike ionic bonds, covalent bonds do not dissociate in water."
 		" For example, the hydrogen and oxygen atoms that combine to form water molecules are bound together by covalent bonds.") 
     elif "what is hydrogen bonding" in input:
-        info = ("Hydrogen bonding is a particularly weak type of chemical bonding that arises in molecules containing hydrogen and a fairly electronegative atom."
-		" Here, the hydrogen atom develops a partially positive charge and is attracted to the neighboring atoms holding a partially negative charge.")
+        info = ("Hydrogen bonding is a particularly weak type of chemical bonding that arises in molecules containing hydrogen and a fairly electronegative atom"
+		" such as O, F and N. Here, the hydrogen atom develops a partially positive charge and is attracted to the neighboring atoms holding a partially negative charge.")
     elif "polar covalent bonding" in input:
         info = ("In covalent bonding, the electrons involved in the bond between two atoms are shared. However, unless the atoms are of the same element,"
 	       " the bonding electrons will spend more time around the more nonmetallic element. That is, the sharing is unequal. Such a bond is called a polar covalent bond.") 
@@ -302,6 +302,8 @@ def run_query(input):
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
 		" and the valence electrons are shown as dots arranged in four groups of one or two dots around the symbol.")
     elif "lewis structure" in input:
+        info = ("Lewis structures use Lewis symbols to show valence electrons in molecules and ions of compounds.")
+    elif "photochromic sunglasses" in input:
         info = ("Lewis structures use Lewis symbols to show valence electrons in molecules and ions of compounds.")
     else:
         if 'wikipedia' and 'what' in input:
@@ -350,6 +352,7 @@ with header:
     st.text("For example: 'what is displacement, inertia, linear momentum, second law of Newton, specific heat, entropy, first law of thermodynamics,... ") 
     
     user_input = st.text_input("Type your question here OR type 'exit' to quit chat bot.")
+    user_input = user_input.lower()
     if user_input:
         if 'exit' == user_input:
             info = ('On behalf of professor Nguyen, thank you for studying. Bye!')
@@ -357,7 +360,7 @@ with header:
             time.sleep(4)
             st.write(info)
         else:
-            run_query(user_input.lower())
+            run_query(user_input)
     #st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
 
 
