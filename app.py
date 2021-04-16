@@ -304,14 +304,17 @@ def run_query(input):
     elif "law of conservation of mass" in input:
         info = ("The law of conservation of mass, dates from Antoine Lavoisier's 1789 discovery, states that mass in an isolated system is neither created nor destroyed"
 		" by chemical reactions or physical transformations.") 
-    elif "law of definite proportions" in input:
+    elif "law of definite proportion" in input:
         info = ("In 1799, the French chemist Joseph Proust discovered that, different samples of a pure compound always contain the same elements in the same proportion by mass."
 	       " When a compound is broken down, its elements are found to be in a definite proportion by mass. Conversely, when the same compound is made from its elements,"
-	       " the elemtns will combine in that same proportion by mass.")
+	       " the elements will combine in that same proportion by mass.")
     elif "what is lewis symbol" in input:
         info = ("American chemist Gilbert Newton Lewis developed electron dot symbols to help explain chemical bonding."
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
 		" and the valence electrons are shown as dots arranged in four groups of one or two dots around the symbol.")
+    elif "father of chemistry" in input:
+        info = ("French chemist Antoine Lavoisier (1743-1794) is known as 'The Father of Chemistry'. He made chemistry a modern science, just as Galileo and Newton"
+		" had done for physics more than a century earlier.")
     elif "lewis structure" in input:
         info = ("Lewis structures use Lewis symbols to show valence electrons in molecules and ions of compounds.")
     elif "photochromic sunglasses" in input:
