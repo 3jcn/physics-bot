@@ -279,7 +279,7 @@ def run_query(input):
     # CHAPTER 12: CHEMICAL BONDING
     
     elif "types of chemical bonds" in input:
-        info = ("There are four types of bonds or interactions: ionic, covalent, hydrogen bonds, and van der Waals interactions." 
+        info = ("There are three main types of chemical bonds: ionic, covalent, and hydrogen bonds. Hydrogen bond is a particularly weak chemical bonding." 
 		" Ionic and covalent bonds are strong interactions that require a larger energy input to break apart.")
     elif "what is ionic bonding" == input:
         info = ("Ionic bonding is a type of chemical bonding that involves the electrostatic attraction between oppositely charged ions,"
@@ -291,6 +291,9 @@ def run_query(input):
 		" and are the strongest and most common form of chemical bond in living organisms. Covalent bonds form between the elements that make up"
 		" the biological molecules in our cells. Unlike ionic bonds, covalent bonds do not dissociate in water."
 		" For example, the hydrogen and oxygen atoms that combine to form water molecules are bound together by covalent bonds.") 
+    elif "hydrogen bonding" in input:
+        info = ("Hydrogen bonding is a particularly weak type of chemical bonding that arises in molecules containing hydrogen and a fairly electronegative atom."
+		" Here, the hydrogen atom develops a partially positive charge and is attracted to the neighboring atoms holding a partially negative charge.")
     else:
         if 'wikipedia' and 'what' in input:
             info = wikipedia.summary(input,sentences=1)
