@@ -292,11 +292,18 @@ def run_query(input):
 		" the biological molecules in our cells. Unlike ionic bonds, covalent bonds do not dissociate in water."
 		" For example, the hydrogen and oxygen atoms that combine to form water molecules are bound together by covalent bonds.") 
     elif "what is hydrogen bonding" in input:
-        info = ("Hydrogen bonding is a particularly weak type of chemical bonding that arises in molecules containing hydrogen and a fairly electronegative atom"
-		" such as O, F and N. Here, the hydrogen atom develops a partially positive charge and is attracted to the neighboring atoms holding a partially negative charge.")
+        info = ("Hydrogen bonding is a particularly weak type of chemical bonding that arises in molecules containing hydrogen and a small, highly electronegative atom"
+		" such as Oxygen, Flourine and Nitrogen. Here, the hydrogen atom develops a partially positive charge and is attracted to the neighboring atoms"
+		" holding a partially negative charge.")
     elif "polar covalent bonding" in input:
         info = ("In covalent bonding, the electrons involved in the bond between two atoms are shared. However, unless the atoms are of the same element,"
-	       " the bonding electrons will spend more time around the more nonmetallic element. That is, the sharing is unequal. Such a bond is called a polar covalent bond.") 
+	       " the bonding electrons will spend more time around the more nonmetallic element. That is, the sharing is unequal. Such a bond is called a polar covalent bond.")
+    elif "what is electronegativity" in input:
+        info = ("Electronegativity is a measure of the ability of an atom in a molecule to draw bonding electrons to itself."
+	       " Electronegativity increases from left to right across a period and decreases down a group in periodic table, just as does the nonmetallic character.")
+    elif "law of conservation of mass" in input:
+        info = ("The law of conservation of mass, dates from Antoine Lavoisier's 1789 discovery, states that mass in an isolated system is neither created nor destroyed"
+		" by chemical reactions or physical transformations.") 
     elif "what is lewis symbol" in input:
         info = ("American chemist Gilbert Newton Lewis developed electron dot symbols to help explain chemical bonding."
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
