@@ -93,7 +93,7 @@ def run_query(input):
     elif 'what is space' == input:
         info = ("Space is the boundless three-dimensional extent in which objects and events have relative position and direction."
 		" Physical space is often conceived in three linear dimensions," 
-		" although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime")
+		" although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime.")
     # CHAPTER TWO: MOTION
     
     elif 'what is inertia' in input:
@@ -275,6 +275,22 @@ def run_query(input):
         info = ('Entropy is a mathematical quantity. Entropy can be expressed as a measure of the disorder of a system. The total entropy of the universe increases in every natural process.')
     elif 'what is heat engine' in input:
         info = ('A heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ')
+   
+    # CHAPTER 12: CHEMICAL BONDING
+    
+    elif "types of chemical bonds" in input:
+        info = ("There are four types of bonds or interactions: ionic, covalent, hydrogen bonds, and van der Waals interactions." 
+		" Ionic and covalent bonds are strong interactions that require a larger energy input to break apart.")
+    elif "what is ionic bonding" == input:
+        info = ("Ionic bonding is a type of chemical bonding that involves the electrostatic attraction between oppositely charged ions,"
+		" or between two atoms with sharply different electronegativities, and is the primary interaction occurring in ionic compounds."
+		" When an element donates an electron from its outer shell, a positive ion is formed. The element accepting the electron is now negatively charged."
+		" Because positive and negative charges attract, these ions stay together and form an ionic bond, or a bond between ions.")
+    elif "what is covalent bonding" == input:
+        info = ("Covalent bondings are strong chemical bonds between two or more atoms. These bonds form when an electron is shared between two elements"
+		" and are the strongest and most common form of chemical bond in living organisms. Covalent bonds form between the elements that make up"
+		" the biological molecules in our cells. Unlike ionic bonds, covalent bonds do not dissociate in water."
+		" For example, the hydrogen and oxygen atoms that combine to form water molecules are bound together by covalent bonds.") 
     else:
         if 'wikipedia' and 'what' in input:
             info = wikipedia.summary(input,sentences=1)
