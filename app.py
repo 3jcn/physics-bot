@@ -297,11 +297,11 @@ def run_query(input):
     elif "polar covalent bonding" in input:
         info = ("In covalent bonding, the electrons involved in the bond between two atoms are shared. However, unless the atoms are of the same element,"
 	       " the bonding electrons will spend more time around the more nonmetallic element. That is, the sharing is unequal. Such a bond is called a polar covalent bond.") 
-    elif "what is Lewis symbol" in input:
+    elif "what is lewis symbol" in input:
         info = ("American chemist Gilbert Newton Lewis developed electron dot symbols to help explain chemical bonding."
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
 		" and the valence electrons are shown as dots arranged in four groups of one or two dots around the symbol.")
-    elif "Lewis structure".lower() in input:
+    elif "lewis structure" in input:
         info = ("Lewis structures use Lewis symbols to show valence electrons in molecules and ions of compounds.")
     else:
         if 'wikipedia' and 'what' in input:
@@ -357,7 +357,7 @@ with header:
             time.sleep(4)
             st.write(info)
         else:
-            run_query(user_input)
+            run_query(user_input.lower())
     #st.text("Say 'No' to stop the conversation or click 'Stop' button on the top right corner.")
 
 
