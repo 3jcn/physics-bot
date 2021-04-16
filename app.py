@@ -90,6 +90,10 @@ def run_query(input):
         info = ("Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past," 
 		" through the present, into the future. In terms of mesurement, the second is the standard unit of time."
 		" Time is often referred to as a fourth dimension, along with three spatial dimensions.")
+    elif 'what is space' == input:
+        info = ("Space is the boundless three-dimensional extent in which objects and events have relative position and direction."
+		" Physical space is often conceived in three linear dimensions, 
+		" although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime")
     # CHAPTER TWO: MOTION
     
     elif 'what is inertia' in input:
