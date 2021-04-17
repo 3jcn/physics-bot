@@ -317,6 +317,30 @@ def run_query(input):
         info = ("An element is a substance whose atoms all have the same number of protons: another way of saying this is that all of a particular"
 		" element's atoms have the same atomic number. Elements are chemically the simplest substances and hence cannot be broken down using chemical reactions."
 		" Elements can only be changed into other elements using nuclear methods.")
+    elif "what is a homogeneous mixture" == input:
+        info = ("A homogeneous mixture is a mixture in which the components that make up the mixture are uniformly distributed throughout the mixture."
+		" The composition of the mixture is the same throughout. There is only one phase of matter observed in a homogeneous mixture at a time."
+		" So, you wouldn't observe both a liquid and a gas or a liquid and a solid in a homogeneous mixture.")
+    elif "what is a heterogeneous mixture" == input:
+        info = ("A heterogeneous mixture is a mixture in which the components of the mixture are not uniform or have localized regions with different properties."
+		" Different samples from the mixture are not identical to each other. There are always two or more phases in a heterogeneous mixture,"
+		" where you can identify a region with properties that are distinct from those of another region,"
+		" even if they are the same state of matter (e.g., liquid, solid).")
+    elif "what is aqueous solution" == input:
+        info = ("A solution in which water is the solvent is called an aqueous solution.")
+    elif "what is solubility" == input:
+        info = ("The solubility of a particular solute is the amount of solute that will dissolve in a specified volume or mass of solvent at a given temperature"
+	       " to produce a saturated solution.")
+    elif "what is a molecule" == input:
+        info = ("A molecule is an electrically neutral group of two or more atoms"
+		" held together by chemical bonds. Molecules are distinguished from ions by their lack of electrical charge.")
+    elif "what is an atom" == input:
+        info = ("An atom is the smallest unit of ordinary matter that forms a chemical element. Every solid, liquid, gas, and plasma is composed of neutral or ionized atoms.")
+    elif "what is periodic table" == input:
+        info = ("The periodic table, also known as the periodic table of elements, is a tabular display of the chemical elements,"
+		" which are arranged by atomic number, electron configuration, and recurring chemical properties."
+		" Russian chemist Dmitri Mendeleev published the first recognizable periodic table in 1869, developed mainly to illustrate"
+		" periodic trends of the then-known elements. He also predicted some properties of unidentified elements that were expected to fill gaps within the table.") 
    
     # CHAPTER 12: CHEMICAL BONDING
     
