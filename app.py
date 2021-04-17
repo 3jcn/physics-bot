@@ -348,10 +348,10 @@ def run_query(input):
     elif "what is valence shell" == input:
         info = ("Valence shell is the outermost shell of every element. Atom of every element have different electronic configurations based on the atomic number"
 		" of each element. Electronic configuration refers to the distribution of electrons in various shells/orbits/energy levels of every atom.")
-    elif "naming compound of a metal and a nonmetal" in input:
+    elif "name a compound of a metal and a nonmetal" in input:
         info = ("To name a binary or two-element compound of a metal combined with a nonmetal, first give the name of the metal and then give thenme of the nonmetal"
 		" with its ending changed to -ide. For example, NaCl sodium chrloride.")
-    elif "naming compounds of two nonmetals" in input:
+    elif "name compounds of two nonmetals" in input:
         info = ("In a compound of two nonmetals, the element with more metallic character is usually written first in the formula and nmed first."
 		" The second element is named using its -ide ending. For example, HCl hydrogen chloride.")
    
