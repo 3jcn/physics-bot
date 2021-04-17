@@ -303,9 +303,20 @@ def run_query(input):
         info = ("Organic chemistry is the study of compounds that contain carbon and hydrogen. The study of all other chemical compounds is called inorganic chemistry.")
     elif "classification of matter" in input:
         info = ("In chemistry, matter can be classified into pure substances and mixtures.")
-    elif "pure substance" in input:
+    elif "what is pure substance" == input:
         info = ("In chemistry, a pure substance is a sample of matter with both definite and constant composition and distinct chemical properties."
-	       " Examples of pure substances include chemical elements and compounds. Alloys and other solutions may also be considered pure if they have a constant composition.")
+	       " Examples of pure substances include chemical elements and compounds."
+	       " Alloys and other solutions may also be considered pure if they have a constant composition.")
+    elif "what is a mixture" == input:
+        info = ("In chemistry, a mixture is a material made up of two or more different substances which are not chemically combined."
+		" A mixture is the physical combination of two or more substances in which the identities are retained and"
+		" are mixed in the form of solutions, suspensions and colloids.")
+    elif "what is a compound" in input:
+        info = ("In chemistry, a compound is a pure substance composed of two or more elements chemically bonded in a definite, fixed ratio by mass.")
+    elif "what is an element" in input:
+        info = ("An element is a substance whose atoms all have the same number of protons: another way of saying this is that all of a particular"
+		" element's atoms have the same atomic number. Elements are chemically the simplest substances and hence cannot be broken down using chemical reactions."
+		" Elements can only be changed into other elements using nuclear methods.")
    
     # CHAPTER 12: CHEMICAL BONDING
     
