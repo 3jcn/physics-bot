@@ -358,6 +358,28 @@ def run_query(input):
         info = ("For a compound of a metal combined with a polyatomic ion, simply name the metal and then name the polyatomic ion. For example, zinc fulfate for ZnSO4."
 	       " If the ammonium ion is combined with a nonmetal, then change the ending of the nonmetal to -ide. For example, ammonium phosphide."
 		" If it is combined with a negative polyatomic ion, then simply name each ion. For example, ammonium phosphate.")
+    elif "noble gases" in input:
+        info = ("The elements of Group 8A are known as the noble gases. They are nonatomic; that is, they exist as single atoms. They almost never forming compounds"
+		" with other elements or even bonding to themselves."
+		" Under standard conditions, they are all odorless, colorless, monatomic gases with very low chemical reactivity.")
+    elif "alkali metals" in input:
+        info = ("The elements in Group 1A, except for hydrogen, are call the alkali metals. The alkali metals consist of the chemical elements"
+		" lithium (Li), sodium (Na), potassium (K), rubidium (Rb), caesium (Cs), and francium (Fr). Each alkali metal has only one valence electron."
+		" The atom tends to lose this outer electron quite easily, so the alkali metals react readily with other elements and are said to be active metals.")
+    elif "alkaline earth metals" in input:
+        info = ("The  elements in Group 2A are called the alkaline earth metals. Their atoms contain two valence electrons. They are active metals but are not"
+		" as chemically reactive as alkali metals. They are shiny, silvery-white, somewhat reactive metals at standard temperature and pressure,"
+		" readily lose their two outermost electrons to form cations with a 2+ charge, low densities, low melting points, low boiling points.")
+    elif "halogens" in input:
+        info = ("The Group 7A elements are called the halogens, consisting of five chemically related elements: fluorine, chlorine, bromine, iodine, and astatine." 
+		" Their atoms have seven valence electrons and have a strong tendency to gain one more electron. They are active nonmetals and are present in nature only"
+		" in the form of their compounds. They all form acids when combined with hydrogen. They are all fairly toxic. They readily combine with metals to form salts."
+		" They are highly electronegative.")
+    elif "groups in periodic table" in input:
+        info = (" Elements that exhibit similar chemistry appear in vertical columns called groups.")
+    elif "periods in periodic table" in input:
+        info = ("The seven horizontal rows in the periodic talbe are called periods. For atoms of a given element, the number of shells that contain electrons"
+		" will be the same as the period number. For example, lithium is in Period 2, so the three electrons are in two shells.")
    
     # CHAPTER 12: CHEMICAL BONDING
     
