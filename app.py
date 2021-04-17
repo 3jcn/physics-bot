@@ -356,7 +356,7 @@ def run_query(input):
 		" The second element is named using its -ide ending. For example, HCl is named as hydrogen chloride.")
     elif "name compounds that contain polyatomic ions" in input:
         info = ("For a compound of a metal combined with a polyatomic ion, simply name the metal and then name the polyatomic ion. For example, zinc fulfate for ZnSO4."
-	       " If the ammonium ion is combined with a nonmetal, then change the ending of the nonmetal to -ide. For example, ammonium phosphide.
+	       " If the ammonium ion is combined with a nonmetal, then change the ending of the nonmetal to -ide. For example, ammonium phosphide."
 		" If it is combined with a negative polyatomic ion, then simply name each ion. For example, ammonium phosphate.")
    
     # CHAPTER 12: CHEMICAL BONDING
