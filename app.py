@@ -376,11 +376,32 @@ def run_query(input):
 		" in the form of their compounds. They all form acids when combined with hydrogen. They are all fairly toxic. They readily combine with metals to form salts."
 		" They are highly electronegative.")
     elif "groups in periodic table" in input:
-        info = (" Elements that exhibit similar chemistry appear in vertical columns called groups.")
+        info = ("Elements that exhibit similar chemistry appear in vertical columns called groups.")
     elif "periods in periodic table" in input:
         info = ("The seven horizontal rows in the periodic talbe are called periods. For atoms of a given element, the number of shells that contain electrons"
 		" will be the same as the period number. For example, lithium is in Period 2, so the three electrons are in two shells.")
-   
+    elif "what is atomic size" in input:
+        info = ("The atomic size or atomic radius of a chemical element is a measure of the size of its atoms, usually the mean or typical distance from the center"
+		" of the nucleus to the boundary of the surrounding shells of electrons.")
+    elif "what is the periodic law" == input:
+        info = ("In 1869, Dmitri Mendeleev and Lothar Meyer individually came up with their own periodic law:"
+		" When the elements are arranged in order of increasing atomic mass, certain sets of properties recur periodically.")
+    elif "what are allotropes" == input:
+        info = (" Allotropes are different structural modifications of an element. The atoms of the element are bonded together in a different manner."
+		" For example, the allotropes of carbon include diamond, graphite, graphene, and fullerenes.") 
+    elif "what are representative elements" == input:
+        info = ("Groups in the periodic table are further divided into Representative Elements and Transition Metals. Groups 1A and 2A on the left and 3A through 8A"
+		" on the right are classified as Representative Elements, while those elements in between are classified as Transition Metals or Transition Elements.") 
+    elif "inner transition elements" in input:
+        info = ("Inner transition metals (ITM) are chemical elements on the periodic table. They are normally shown in two rows below all the other elements."
+		" They include elements 57-71, or lanthanides, and 89-103, or actinides. The lanthanides are very similar, and the actinides are all radioactive.")
+    elif "what is metalloid" == input:
+        info = ("A metalloid is a type of chemical element which has a preponderance of properties in between, or that are a mixture of, those of metals and nonmetals.")
+    elif "nonmetals" in input:
+        info = ("Nonmetals are elements that generally cannot conduct electricity. They are the second largest class of elements after metals."
+		" Examples of nonmetals include hydrogen, carbon, chlorine, and helium. Properties of nonmetals include a relatively low boiling point,"
+		" so many nonmetals are gases.")
+	
     # CHAPTER 12: CHEMICAL BONDING
     
     elif "types of chemical bonds" in input:
