@@ -340,7 +340,14 @@ def run_query(input):
         info = ("The periodic table, also known as the periodic table of elements, is a tabular display of the chemical elements,"
 		" which are arranged by atomic number, electron configuration, and recurring chemical properties."
 		" Russian chemist Dmitri Mendeleev published the first recognizable periodic table in 1869, developed mainly to illustrate"
-		" periodic trends of the then-known elements. He also predicted some properties of unidentified elements that were expected to fill gaps within the table.") 
+		" periodic trends of the then-known elements. He also predicted some properties of unidentified elements that were expected to fill gaps within the table.")
+    elif "what is valence electron" == input:
+        info = ("In chemistry and physics, a valence electron is an outer shell electron that is associated with an atom, and that can participate in the formation"
+		" of a chemical bond if the outer shell is not closed; in a single covalent bond, both atoms in the bond contribute one valence electron"
+		" in order to form a shared pair.")
+    elif "what is valence shell" == input:
+        info = ("Valence shell is the outermost shell of every element. Atom of every element have different electronic configurations based on the atomic number"
+		" of each element. Electronic configuration refers to the distribution of electrons in various shells/orbits/energy levels of every atom.")
    
     # CHAPTER 12: CHEMICAL BONDING
     
