@@ -85,7 +85,8 @@ def run_query(input):
     elif 'what is a second' == input:
         info = ("In SI system, second is the base units of time. One second is exactly 9,192,631,770 cycles of radiation of an atom of caesium-133.")
     elif 'SI units' in input:
-        info = ('SI units is the international system of units. It is the modern form of the metric system. It is the only system of measurement with an official status in nearly every country in the world.')
+        info = ("SI units is the international system of units. It is the modern form of the metric system. It is the only system of measurement with"
+		" an official status in nearly every country in the world.")
     elif 'what is time' == input:
         info = ("Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past," 
 		" through the present, into the future. In terms of mesurement, the second is the standard unit of time."
@@ -107,19 +108,22 @@ def run_query(input):
     elif 'what is distance' in input:
         info = ('Distance is the actual length of the path taken by an object. It is a scalar quatity. unit of distance in SI system is meter.')
     elif 'displacement' in input:
-        info = ('Displacement is a vector quantity. Displacement is the simply the straight-line distance between where the object started and where it ended up plus direction.')
+        info = ('Displacement is a vector quantity. Displacement is the simply the straight-line distance between where the object started and"
+		" where it ended up plus direction.')
     elif 'what is velocity' in input:
         info = ('Velocity is a vector. It equals displacement divided by time. Unit of velocity in SI system is meter per second.')
     elif 'what is speed' in input:
         info = ('Speed is a scalar quatity. average speed equals distance traveled divided by time to travel the distance. Unit of speed in SI system is meter per second.')
     elif 'uniform circular motion' in input:
-        info = ('Uniform circular motion is the motion of an object in a circle at a constant speed. An object in uniform ciruclar motion has acceleration named centripetal acceleration.')
+        info = ('Uniform circular motion is the motion of an object in a circle at a constant speed. An object in uniform ciruclar motion"
+		" has acceleration named centripetal acceleration.')
     elif 'linear motion' in input:
         info = ('Linear motion is the motion in one direction.')
     elif 'what is acceleration' in input:
         info = ('In linear motion, acceleration is the time rate of change of velocity. Unit of acceleration is meter per second squared.')
     elif 'centripetal acceleration' in input:
-        info = ("Magnitude of centripetal acceleration equals square of speed divided by the radius of the circular path. Its direction points to the center of the circular path.")
+        info = ("Magnitude of centripetal acceleration equals square of speed divided by the radius of the circular path."
+		" Its direction points to the center of the circular path.")
     elif 'Distance traveled by a dropped object' in input:
         info = ('Distance traveled by a dropped object d = 0.5*g*t^2. Where g is 9.8 meter per second squared.')
         
@@ -128,17 +132,21 @@ def run_query(input):
     elif "newton's laws" in input:
         info = ('There are three laws of Newton in classical mechancis.')
     elif "what is force" in input:
-        info = ('In classical mechanics, a force is an action that tends to maintain or alter the motion of an object or to distort it. Unit of force in SI system is Newton.')
+        info = ('In classical mechanics, a force is an action that tends to maintain or alter the motion of an object or to distort it."
+		" Unit of force in SI system is Newton.')
     elif "first law of newton" in input:
         info = ('An object will remain at rest or in uniform motion in a straight line unless acted on by an external force.')
     elif "second law of newton" in input:
-        info = ('The acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitude of the force. and inversely proportional to the mass of the object.')
+        info = ('The acceleration produced by an unbalanced force acting on an object is directly proportional to the magnitude of the force,"
+		" and inversely proportional to the mass of the object.')
     elif "third law of newton" in input:
         info = ('For every action there is an equal and opposite reaction')
     elif "newton's gravitational law" in input:
-        info = ('Every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses, and inversely proportional to the square of the distance between them.')
+        info = ('Every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses,"
+		" and inversely proportional to the square of the distance between them.')
     elif "newton's law of gravitation" in input:
-        info = ('Every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses, and inversely proportional to the square of the distance between them.')
+        info = ('Every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses,"
+		" and inversely proportional to the square of the distance between them.')
     elif 'what is torque' in input:
         info = ('Torque is a vector quantity. It is the vector product of force and lever arm.')
     elif 'linear momentum' in input:
@@ -153,7 +161,8 @@ def run_query(input):
     # CHAPTER FOUR: WORK & ENERGY
     
     elif 'what is work' in input:
-        info = ('In physics, work applied on an object is the product of distance object moved and horizontal component of force applied on the object. Unit of work in SI system is joule.')
+        info = ('In physics, work applied on an object is the product of distance object moved and horizontal component of force applied on the object."
+		" Unit of work in SI system is joule.')
     elif 'what is energy' in input:
         info = ('Energy is the capacity of doing work. Unit of energy is joule.')
     elif 'kinetic energy' in input:
@@ -178,9 +187,12 @@ def run_query(input):
     elif 'what is substance' == input:
         info = (' A substance is a form of matter that has constant chemical composition and characteristic properties.')
     elif 'how to compute heat' in input:
-        info = ("First, determine how many steps for the process of changing phases and temperatures. Apply formula H = mass times specific heat, times the change in temperature, if there is no phase change in each step.  Apply formula H = mass time latent heat of fusion or vaporization, if there is a phase change in each step. The final answer is the total of heat from all steps")
+        info = ("First, determine how many steps for the process of changing phases and temperatures. Apply formula H = mass times specific heat,"
+		" times the change in temperature, if there is no phase change in each step.  Apply formula H = mass time latent heat of fusion or vaporization,"
+		" if there is a phase change in each step. The final answer is the total of heat from all steps")
     elif 'main topics of chapter five' in input:
-        info = ("In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws. We also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
+        info = ("In this chapter, we study temperature, heat, specific heat, latent heat of fusion and vaporization, entropy, ideal gas law, thermodynamics laws."
+		" We also learn how to calculate heat necessary to change a substance's phase or substance's temperature") 
     elif 'what is temperature' in input:
         info = ('Temperature is a measure of the average kinetic energy of the molecules of a substance. Unit of temperature in SI system is kelvin.')
     elif 'what is thermometer' in input:
@@ -192,11 +204,13 @@ def run_query(input):
     elif "what is unit of heat" in input:
         info = ('Unit of heat in SI system is joule.')
     elif "what is calorie" == input:
-        info = ('A calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure. One food Calorie is equal to 1000 calories or 4186 joules.')
+        info = ('A calorie is the amount of heat necessary to raise one gram of pure water by on celsius degree at normal atmospheric pressure."
+		" One food Calorie is equal to 1000 calories or 4186 joules.')
     elif 'what is specific heat' == input:
         info = ('Specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
     elif 'specific heat capacity' in input:
-        info = ('Specific heat capacity is the same as specific heat. Specific heat is the amount of heat nessesary to raise the temperature of one kilogram of the subtance one celsius degree.')
+        info = ('Specific heat capacity is the same as specific heat. Specific heat is the amount of heat nessesary to raise the temperature of"
+		" one kilogram of the subtance one celsius degree.')
     elif input == 'what is specific heat of water':
         info = ('Water has highest specific heat capacity 4186 joule per kilogram per celsius')
     elif 'specific heat of iron' in input:
@@ -264,7 +278,9 @@ def run_query(input):
     elif 'what is thermodynamics' == input:
         info = ('Thermodynamics means the dynamics of heat. Its study includes the production of heat, the flow of heat, and the conversion of heat to work.')
     elif 'first law of thermodynamics' in input:
-        info = ('First law of thermodynamics is also called conservation of energy law. Energy cannot be created or destroyed, but it can be changed from one form to another. In other words, heat add to a system equals the change in internal energy of the system plus work done by the system.')
+        info = ('First law of thermodynamics is also called conservation of energy law. Energy cannot be created or destroyed,"
+		" but it can be changed from one form to another. In other words, heat add to a system equals the change in internal energy of the system"
+		" plus work done by the system.')
     elif 'second law of thermodynamics' in input:
         info = ('It is impossible for heat to flow spontaneously from a colder body to a hotter body. In other words, the entropy of an isolated system never decreases.')
     elif 'third law of thermodynamics' in input:
@@ -272,9 +288,24 @@ def run_query(input):
     elif 'what is heat pump' in input:
         info = ('A heat pump is a device that uses work input to transfer heat from a low temperature reservoir to a high temperature reservoir.')
     elif 'entropy' in input:
-        info = ('Entropy is a mathematical quantity. Entropy can be expressed as a measure of the disorder of a system. The total entropy of the universe increases in every natural process.')
+        info = ('Entropy is a mathematical quantity. Entropy can be expressed as a measure of the disorder of a system. The total entropy of"
+		" the universe increases in every natural process.')
     elif 'what is heat engine' in input:
-        info = ('A heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ')
+        info = ('A heat engine is a device for producing motive power from heat, such as a gasoline engine or steam engine. ') 
+		
+    # CHAPTER 11: THE CHEMICAL ELEMENTS
+    
+    elif "divisions of chemistry" in input:
+        info = ("There are five major divisions in chemistry: physical chemistry, organic chemistry, inorganic chemistry, biochemistry, and analytic chemistry.")
+    elif "what is analytical chemistry" == input:
+        info = ("Analytical chemistry identifies what substances are present in a material and determines how much of each substance is present.")
+    elif "what is inorganic chemistry" == input:
+        info = ("Organic chemistry is the study of compounds that contain carbon and hydrogen. The study of all other chemical compounds is called inorganic chemistry.")
+    elif "classification of matter" in input:
+        info = ("In chemistry, matter can be classified into pure substances and mixtures.")
+    elif "pure substance" in input:
+        info = ("In chemistry, a pure substance is a sample of matter with both definite and constant composition and distinct chemical properties."
+	       " Examples of pure substances include chemical elements and compounds. Alloys and other solutions may also be considered pure if they have a constant composition.")
    
     # CHAPTER 12: CHEMICAL BONDING
     
@@ -305,9 +336,9 @@ def run_query(input):
         info = ("The law of conservation of mass, dates from Antoine Lavoisier's 1789 discovery, states that mass in an isolated system is neither created nor destroyed"
 		" by chemical reactions or physical transformations.") 
     elif "law of definite proportion" in input:
-        info = ("In 1799, the French chemist Joseph Proust discovered that, different samples of a pure compound always contain the same elements in the same proportion by mass."
-	       " When a compound is broken down, its elements are found to be in a definite proportion by mass. Conversely, when the same compound is made from its elements,"
-	       " the elements will combine in that same proportion by mass.")
+        info = ("In 1799, the French chemist Joseph Proust discovered that, different samples of a pure compound always contain the same elements"
+		" in the same proportion by mass. When a compound is broken down, its elements are found to be in a definite proportion by mass."
+		" Conversely, when the same compound is made from its elements, the elements will combine in that same proportion by mass.")
     elif "what is lewis symbol" in input:
         info = ("American chemist Gilbert Newton Lewis developed electron dot symbols to help explain chemical bonding."
 		" In a Lewis symbol, the nucleus and the inner electrons of an atom or ion are represented by the element's symbol,"
