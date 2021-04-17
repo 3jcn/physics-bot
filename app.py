@@ -350,10 +350,14 @@ def run_query(input):
 		" of each element. Electronic configuration refers to the distribution of electrons in various shells/orbits/energy levels of every atom.")
     elif "name a compound of a metal and a nonmetal" in input:
         info = ("To name a binary or two-element compound of a metal combined with a nonmetal, first give the name of the metal and then give thenme of the nonmetal"
-		" with its ending changed to -ide. For example, NaCl sodium chrloride.")
+		" with its ending changed to -ide. For example, NaCl is named as sodium chrloride.")
     elif "name compounds of two nonmetals" in input:
-        info = ("In a compound of two nonmetals, the element with more metallic character is usually written first in the formula and nmed first."
-		" The second element is named using its -ide ending. For example, HCl hydrogen chloride.")
+        info = ("In a compound of two nonmetals, the element with more metallic character is usually written first in the formula and named first."
+		" The second element is named using its -ide ending. For example, HCl is named as hydrogen chloride.")
+    elif "name compounds that contain polyatomic ions" in input:
+        info = ("For a compound of a metal combined with a polyatomic ion, simply name the metal and then name the polyatomic ion. For example, zinc fulfate for ZnSO4."
+	       " If the ammonium ion is combined with a nonmetal, then change the ending of the nonmetal to -ide. For example, ammonium phosphide.
+		" If it is combined with a negative polyatomic ion, then simply name each ion. For example, ammonium phosphate.")
    
     # CHAPTER 12: CHEMICAL BONDING
     
