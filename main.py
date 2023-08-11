@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-st.title("Physics Bot")
+st.title("Physics Bot for Students")
 
 openai.api_key = st.secrets["my_openai_key"]
 
