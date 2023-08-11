@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Physics Bot for Students")
 
-openai.api_key = st.secrets[my_openai_key]
+openai.api_key = st.secrets["my_openai_key"]
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
